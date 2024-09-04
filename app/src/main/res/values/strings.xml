@@ -28,4 +28,6 @@
     <string name="tax">Tax: %s</string>
     <string name="total">Total: %s</string>
     <string name="submit">Submit</string>
+    <string name="order_string">Entree: %1$s\nSide dish: %2$s\nAccompaniment: %3$s</string>
+    <string name="new_order">New Order -</string>
 </resources>
