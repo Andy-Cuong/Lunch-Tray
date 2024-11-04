@@ -20,7 +20,7 @@ import android.content.Intent
 import androidx.annotation.StringRes
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -51,6 +51,7 @@ import com.example.lunchtray.ui.OrderViewModel
 import com.example.lunchtray.ui.SideDishMenuScreen
 import com.example.lunchtray.ui.StartOrderScreen
 import com.example.lunchtray.ui.theme.LunchTrayTheme
+import kotlin.apply
 
 // TODO: Screen enum
 enum class LunchTrayScreen(@StringRes val title: Int) {
@@ -163,7 +164,7 @@ fun LunchTrayTopBar(
             if (canNavigateBack) {
                 IconButton(onClick = navigateUp) {
                     Icon(
-                        imageVector = Icons.Filled.ArrowBack,
+                        imageVector = Icons.AutoMirrored.Filled.ArrowBack,
                         contentDescription = stringResource(id = R.string.back_button))
                 }
             }

@@ -24,7 +24,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
-import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -58,7 +58,7 @@ fun CheckoutScreen(
         ItemSummary(item = orderUiState.sideDish, modifier = Modifier.fillMaxWidth())
         ItemSummary(item = orderUiState.accompaniment, modifier = Modifier.fillMaxWidth())
 
-        Divider(
+        HorizontalDivider(
             thickness = dimensionResource(R.dimen.thickness_divider),
             modifier = Modifier.padding(bottom = dimensionResource(R.dimen.padding_small))
         )
